@@ -1,0 +1,44 @@
+:root {
+  --title: #fff;
+  --text: #ccc;
+  --separator: #343434;
+  --details: #4a4a4a;
+  --emphasis: #62d4f3;
+  --bg_main: #171717;
+  --bg_footer: #0a0a0a;
+  --b: #000;
+  --w: #fff;
+  --c9: #0a0a0a;
+}
+
+.light:root {
+  --title: #0a0a0a;
+  --text: #171717;
+  --separator: #ccc;
+  --details: #9a9a9a;
+  --emphasis: #62d4f3;
+  --bg_main: #f3f3f3;
+  --bg_footer: #0a0a0a;
+  --b: #000;
+  --w: #fff;
+  --c9: #0a0a0a;
+}
+
+.white {
+  color: #fff;
+}
+
+.black {
+  color: #000;
+}
+
+.title {
+  color: var(--title);
+}
+
+.text {
+  color: var(--text);
+}
+body {
+  background: var(--bg_main);
+}
