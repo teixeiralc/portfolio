@@ -55,6 +55,11 @@ ls == letter-spacing
   letter-spacing: 0.1rem;
 }
 
+.ff-1-18-ls {
+  font: 400 clamp(0.9rem, 1.125rem, 1.5rem) / 1 'Noto Sans', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
 .ff-1-14-ls {
   font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
   letter-spacing: 0.1rem;
