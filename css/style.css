@@ -4,3 +4,15 @@
 @import './utilities/typography.css';
 @import './utilities/colors.css';
 @import './utilities/header.css';
+
+/* Main */
+
+@import './main/home.css';
+@import './main/projects.css';
+
+
+
+body {
+  background: var(--bg_main);
+  height: 5000px;
+}

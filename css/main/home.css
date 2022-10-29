@@ -1,0 +1,46 @@
+.main_info .text {
+  line-height: 1;
+}
+
+.home {
+  padding-top: 60px;
+}
+
+.main_info .techs {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.main_info .techs::before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background: var(--lg);
+}
+
+.main_img svg {
+  max-width: 100%;
+}
+
+.call_to_project {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.call_to_project svg {
+  transition: 0.2s ease;
+}
+
+.call_to_project:hover {
+  opacity: 0.7;
+}
+
+.call_to_project:hover svg {
+  transform: translate3d(10px, 0, 0);
+}

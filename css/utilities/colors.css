@@ -1,14 +1,25 @@
 :root {
+  /* Variables that will change in light mode */
   --title: #fff;
   --text: #ccc;
   --separator: #343434;
   --details: #4a4a4a;
-  --emphasis: #62d4f3;
   --bg_main: #171717;
   --bg_footer: #0a0a0a;
+
+  --emphasis: #62d4f3;
+  --lg: linear-gradient(40deg, #62d4f3 0%, #3098b5 100%);
   --b: #000;
   --w: #fff;
   --c9: #0a0a0a;
+  --c8: #171717;
+  --c7: #272727;
+  --c6: #343434;
+  --c5: #4a4a4a;
+  --c4: #707070;
+  --c3: #9a9a9a;
+  --c2: #cccccc;
+  --c1: #f3f3f3;
 }
 
 .light:root {
@@ -16,12 +27,7 @@
   --text: #171717;
   --separator: #ccc;
   --details: #9a9a9a;
-  --emphasis: #62d4f3;
   --bg_main: #f3f3f3;
-  --bg_footer: #0a0a0a;
-  --b: #000;
-  --w: #fff;
-  --c9: #0a0a0a;
 }
 
 .white {
@@ -39,6 +45,43 @@
 .text {
   color: var(--text);
 }
-body {
-  background: var(--bg_main);
+
+.emphasis {
+  color: var(--emphasis);
+}
+
+.c9 {
+  color: var(--c9);
+}
+
+.c8 {
+  color: var(--c8);
+}
+
+.c7 {
+  color: var(--c7);
+}
+
+.c6 {
+  color: var(--c6);
+}
+
+.c5 {
+  color: var(--c5);
+}
+
+.c4 {
+  color: var(--c4);
+}
+
+.c3 {
+  color: var(--c3);
+}
+
+.c2 {
+  color: var(--c2);
+}
+
+.c1 {
+  color: var(--c1);
 }

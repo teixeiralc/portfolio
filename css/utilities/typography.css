@@ -8,7 +8,7 @@ line-height */
 
 /* 
 
-ff 1 == Epilogue
+ff 1 == Noto Sans
 ff 2 == Merriweather
 b == bold
 i == italic
@@ -17,45 +17,55 @@ ls == letter-spacing
 */
 
 .ff-1-title {
-  font: 700 clamp(2rem, 4.5rem, 6rem) / 1.1rem 'Epilogue', sans-serif;
+  font: 700 clamp(2rem, 4.5rem, 6rem) / 1.1 'Noto Sans', sans-serif;
 }
 
 .ff-2-title {
-  font: italic 700 clamp(2rem, 4.5rem, 6rem) / 1.1rem 'Merriweather', serif;
+  font: italic 700 clamp(2rem, 4.5rem, 6rem) / 1.1 'Merriweather', serif;
 }
 
 .ff-1-subtitle {
-  font: 700 clamp(1.5rem, 2.25rem, 3.25rem) / 1.1rem 'Epilogue', sans-serif;
+  font: 700 clamp(1.5rem, 2.25rem, 3.25rem) / 1.1 'Noto Sans', sans-serif;
 }
 
 .ff-1-32 {
-  font: 400 clamp(1.5rem, 2rem, 2.5rem) / 1.4rem 'Epilogue', sans-serif;
+  font: 400 clamp(1.5rem, 2rem, 2.5rem) / 1.4 'Noto Sans', sans-serif;
 }
 
 .ff-1-24 {
-  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4rem 'Epilogue', sans-serif;
+  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Noto Sans', sans-serif;
+}
+
+.ff-1-24-ls {
+  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Noto Sans', sans-serif;
+  letter-spacing: 0.1rem;
 }
 
 .ff-1-20 {
-  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4rem 'Epilogue', sans-serif;
+  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
 }
 
 .ff-1-20-ls {
-  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4rem 'Epilogue', sans-serif;
+  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-20-ls-b {
-  font: 700 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4rem 'Epilogue', sans-serif;
+  font: 700 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-14-ls {
-  font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2rem 'Epilogue', sans-serif;
+  font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+.ff-1-14-ls-i {
+  font: italic 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-14-ls-b {
-  font: 700 clamp(0.65rem, 0.875rem, 1rem) / 1.2rem 'Epilogue', sans-serif;
+  font: 700 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
   letter-spacing: 0.1rem;
 }
