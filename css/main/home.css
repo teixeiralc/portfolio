@@ -1,9 +1,13 @@
-.main_info .text {
+.home {
+  padding-top: clamp(40px, 80px, 100px);
+}
+
+.main_info .text, .main_info .title {
   line-height: 1;
 }
 
-.home {
-  padding-top: 60px;
+.main_info p:first-child {
+  margin-bottom: -7px;
 }
 
 .main_info .techs {
@@ -21,16 +25,22 @@
   background: var(--lg);
 }
 
+.main_img {
+  justify-self: end;
+}
+
 .main_img svg {
   max-width: 100%;
 }
 
 .call_to_project {
+  max-width: fit-content;
   grid-column: 1;
   grid-row: 2;
   display: flex;
   align-items: center;
   gap: 10px;
+  /* border-bottom: 2px solid transparent; */
 }
 
 .call_to_project svg {
@@ -42,5 +52,5 @@
 }
 
 .call_to_project:hover svg {
-  transform: translate3d(10px, 0, 0);
+  transform: translate3d(5px, 0, 0);
 }

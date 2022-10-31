@@ -1,0 +1,92 @@
+.education_grid {
+  margin-top: clamp(40px, 80px, 100px);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 80px;
+}
+
+.education_grid h3 {
+  text-transform: uppercase;
+  margin-bottom: clamp(20px, 30px, 40px);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.education_grid h3::after {
+  content: '';
+  width: 70%;
+  height: 2px;
+  display: inline-block;
+  background-color: var(--separator);
+}
+
+/* College */
+
+.college_info {
+  padding: 15px;
+  background-color: var(--c9);
+}
+
+.college_info span:first-of-type {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.college_info span:last-of-type {
+  display: block;
+  margin-top: 15px;
+  text-align: end;
+}
+
+/* Courses */
+.course {
+  display: flex;
+  justify-content: space-between;
+}
+
+.course + .course {
+  margin-top: 8px;
+}
+
+.courses_info span {
+  text-align: right;
+}
+
+.course:hover {
+  opacity: 0.7;
+}
+
+/* Languages */
+
+.languages_info p:last-of-type {
+  margin-top: 8px;
+}
+
+/* Details */
+
+.education_grid .grid_div:nth-child(even) {
+  position: relative;
+}
+
+.education_grid .grid_div:nth-child(even)::before {
+  content: '';
+  width: 2px;
+  height: 40px;
+  background-color: var(--separator);
+  top: 50%;
+  left: -13%;
+  transform: translate(-50%);
+  position: absolute;
+}
+
+.education_grid .grid_div:nth-child(even)::after {
+  content: '';
+  width: 2px;
+  height: 40px;
+  background-color: var(--separator);
+  top: 50%;
+  right: -13%;
+  transform: translate(-50%);
+  position: absolute;
+}

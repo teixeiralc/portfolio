@@ -8,7 +8,7 @@ line-height */
 
 /* 
 
-ff 1 == Noto Sans
+ff 1 == Space Grotesk
 ff 2 == Merriweather
 b == bold
 i == italic
@@ -17,7 +17,7 @@ ls == letter-spacing
 */
 
 .ff-1-title {
-  font: 700 clamp(2rem, 4.5rem, 6rem) / 1.1 'Noto Sans', sans-serif;
+  font: 700 clamp(2rem, 4.5rem, 6rem) / 1.1 'Space Grotesk', sans-serif;
 }
 
 .ff-2-title {
@@ -25,52 +25,60 @@ ls == letter-spacing
 }
 
 .ff-1-subtitle {
-  font: 700 clamp(1.5rem, 2.25rem, 3.25rem) / 1.1 'Noto Sans', sans-serif;
+  font: 700 clamp(1.5rem, 2.25rem, 3.25rem) / 1.1 'Space Grotesk', sans-serif;
 }
 
 .ff-1-32 {
-  font: 400 clamp(1.5rem, 2rem, 2.5rem) / 1.4 'Noto Sans', sans-serif;
+  font: 400 clamp(1.5rem, 2rem, 2.5rem) / 1.4 'Space Grotesk', sans-serif;
 }
 
 .ff-1-24 {
-  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Noto Sans', sans-serif;
+  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Space Grotesk', sans-serif;
 }
 
 .ff-1-24-ls {
-  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Noto Sans', sans-serif;
+  font: 400 clamp(1rem, 1.5rem, 1.75rem) / 1.4 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-20 {
-  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
+  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Space Grotesk', sans-serif;
 }
 
 .ff-1-20-ls {
-  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
+  font: 400 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-20-ls-b {
-  font: 700 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Noto Sans', sans-serif;
+  font: 700 clamp(0.9rem, 1.25rem, 1.5rem) / 1.4 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-18-ls {
-  font: 400 clamp(0.9rem, 1.125rem, 1.5rem) / 1 'Noto Sans', sans-serif;
+  font: 400 clamp(0.9rem, 1.125rem, 1.5rem) / 1 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
+}
+
+.ff-1-16 {
+  font: 400 clamp(0.875rem, 1rem, 1.125rem) / 1.2 'Space Grotesk', sans-serif;
+}
+
+.ff-1-16-ls {
+  font: 400 clamp(0.875rem, 1rem, 1.125rem) / 1.2 'Space Grotesk', sans-serif;
+  letter-spacing: 0.05rem;
+}
+
+.ff-1-14 {
+  font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Space Grotesk', sans-serif;
 }
 
 .ff-1-14-ls {
-  font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
-  letter-spacing: 0.1rem;
-}
-
-.ff-1-14-ls-i {
-  font: italic 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
+  font: 400 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
 }
 
 .ff-1-14-ls-b {
-  font: 700 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Noto Sans', sans-serif;
+  font: 700 clamp(0.65rem, 0.875rem, 1rem) / 1.2 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
 }

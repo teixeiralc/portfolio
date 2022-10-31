@@ -4,8 +4,13 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  background-color: var(--bg_main);
 }
 
 a {
@@ -23,6 +28,12 @@ img {
   height: auto;
 }
 
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -33,7 +44,7 @@ img {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 40px;
+  /* gap: 40px; */
   align-items: center;
 }
 
@@ -62,7 +73,7 @@ img {
   height: clamp(15px, 56px, 70px);
   position: absolute;
   transform: translate(-30%, 60%);
-  z-index: -100;
+  z-index: -1;
 }
 
 .btn_like {

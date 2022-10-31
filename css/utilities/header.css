@@ -1,12 +1,8 @@
-header {
-  background: var(--bg_main);
-}
-
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
+  padding-top: 30px;
   position: relative;
 }
 
@@ -66,9 +62,10 @@ header {
 .fa-moon {
   background: var(--lg);
   background-clip: text;
-  color: transparent;
+  color: var(--lg);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
+  transform: scaleX(-1);
 }
 
 .nav_list label {
