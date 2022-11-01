@@ -6,10 +6,6 @@
   line-height: 1;
 }
 
-.main_info p:first-child {
-  margin-bottom: -7px;
-}
-
 .main_info .techs {
   margin-top: 5px;
   display: flex;

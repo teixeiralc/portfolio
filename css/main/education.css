@@ -65,28 +65,17 @@
 
 /* Details */
 
-.education_grid .grid_div:nth-child(even) {
+.education_grid .grid_div:not(:first-child) {
   position: relative;
 }
 
-.education_grid .grid_div:nth-child(even)::before {
+.education_grid .grid_div:not(:first-child)::before {
   content: '';
   width: 2px;
   height: 40px;
   background-color: var(--separator);
   top: 50%;
-  left: -13%;
-  transform: translate(-50%);
-  position: absolute;
-}
-
-.education_grid .grid_div:nth-child(even)::after {
-  content: '';
-  width: 2px;
-  height: 40px;
-  background-color: var(--separator);
-  top: 50%;
-  right: -13%;
+  left: -11%;
   transform: translate(-50%);
   position: absolute;
 }

@@ -12,3 +12,7 @@
 @import './main/projects.css';
 @import './main/about.css';
 @import './main/education.css';
+
+/* Components */
+
+@import './components/hamburger.css';
