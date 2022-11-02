@@ -44,7 +44,6 @@ svg {
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  /* gap: 40px; */
   align-items: center;
 }
 
@@ -74,6 +73,10 @@ svg {
   position: absolute;
   transform: translate(-30%, 60%);
   z-index: -1;
+}
+
+.light .section_title::before {
+  background-image: url('../../icon/title-detail-light.svg');
 }
 
 .btn_like {

@@ -9,8 +9,6 @@
 
   --emphasis: #62d4f3;
   --lg: linear-gradient(40deg, #62d4f3 0%, #3098b5 100%);
-  --b: #000;
-  --w: #fff;
   --c9: #0a0a0a;
   --c8: #171717;
   --c7: #272727;
@@ -20,22 +18,20 @@
   --c3: #9a9a9a;
   --c2: #cccccc;
   --c1: #f3f3f3;
+  --c0: #fff;
 }
 
-.light:root {
+:root.light {
   --title: #0a0a0a;
   --text: #171717;
   --separator: #ccc;
   --details: #9a9a9a;
   --bg_main: #f3f3f3;
+  --c0: #0a0a0a;
 }
 
 .white {
   color: #fff;
-}
-
-.black {
-  color: #000;
 }
 
 .title {
@@ -44,6 +40,14 @@
 
 .text {
   color: var(--text);
+}
+
+.c1_footer {
+  color: #f3f3f3;
+}
+
+.text_footer {
+  color: #ccc;
 }
 
 .emphasis {
@@ -84,4 +88,18 @@
 
 .c1 {
   color: var(--c1);
+}
+
+.c0 {
+  color: var(--c0);
+}
+
+/* Light mode SVG's */
+
+.light svg.logo {
+  filter: invert(0%) sepia(9%) saturate(1032%) hue-rotate(4deg) brightness(5%) contrast(92%);
+}
+
+.light svg.arrowSvg {
+  filter: invert(0%) sepia(2%) saturate(2871%) hue-rotate(317deg) brightness(5%) contrast(100%);
 }

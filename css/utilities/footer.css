@@ -31,11 +31,23 @@ footer {
   margin-top: 10px;
 }
 
-.footer_info_links a, .contact_info a {
+.footer_info_links a,
+.contact_info a {
   max-width: fit-content;
 }
 
 .footer_info_links a:hover,
 .contact_info a:hover {
   opacity: 0.7;
+}
+
+/* Language selector */
+
+.footer_info_links select {
+  max-width: max-content;
+  border: none;
+  background-color: #171717;
+  color: #ccc;
+  font-weight: 500;
+  border-radius: 5px;
 }

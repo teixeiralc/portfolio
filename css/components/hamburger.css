@@ -39,17 +39,20 @@
 }
 
 .active.hamburger:before {
-  transform: translateY(0) rotate(45deg);
+  transform: translateY(0) rotate(135deg);
 }
 
 .active.hamburger:after {
-  transform: translateY(0) rotate(-45deg);
+  transform: translateY(0) rotate(-135deg);
 }
 
 @media (max-width: 768px) {
   [data-menu='hamburger'] {
     display: block;
     z-index: 2;
+  }
+  .theme_switch {
+    margin-left: 5px;
   }
   .nav_list {
     flex-direction: column;
