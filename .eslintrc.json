@@ -10,6 +10,13 @@
     "sourceType": "module"
   },
   "rules": {
-    "import/extensions": "off"
+    "import/extensions": "off",
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [".js", ".jsx", ".ts", ".tsx"]
+        }
+      }
+    }
   }
 }

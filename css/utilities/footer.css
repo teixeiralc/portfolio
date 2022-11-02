@@ -51,3 +51,15 @@ footer {
   font-weight: 500;
   border-radius: 5px;
 }
+
+@media screen and (max-width: 768px) {
+  .grid_footer {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .grid_footer {
+    grid-template-columns: 1fr;
+  }
+}

@@ -30,11 +30,11 @@
             <path d="M12.3125 0L12.5625 2.79811L18 3.49764L23.125 43.9431L8.5 43.5616L3.75 31.606L0 32.2419L3.0625 47.25H34.5625L34.3125 44.6427L29.875 43.8795L24.875 3.49764L29.0625 2.79811L28.75 0H12.3125Z" fill="white" />
           </svg></a>
 
-        <nav>
-          <button data-menu="hamburger">
+        <nav aria-label="primária">
+          <button data-menu="hamburger" data-menu="hamburger" aria-expanded="false" aria-controls="menu" aria-label="abrir menu">
             <div class="hamburger"></div>
           </button>
-          <ul class="ff-1-18-ls title nav_list">
+          <ul class="ff-1-18-ls title nav_list" id="menu" role="menu">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Projetos</a></li>
             <li><a href="#about">Sobre</a></li>
@@ -64,7 +64,10 @@
             <p class="ff-1-32 text">Olá 👋</p>
             <h1 class="ff-1-title title">Eu sou o <span class="emphasis ff-2-title">Lucas</span>,</h1>
             <p class="ff-1-32 text">Desenvolvedor Frontend.</p>
-            <p class="ff-1-20 text techs">React, JavaScript, HTML, CSS, Figma</p>
+            <div class="ff-1-20 text techs">
+              <div class="type_effect_text"></div>
+              <div class="cursor"></div>
+            </div>
           </div>
 
           <a href="./projects.html" class="call_to_project ff-1-32 text">
@@ -146,7 +149,7 @@
 
         <div class="projects_info">
           <p class="ff-1-24 text">Estes são alguns dos meus projetos maiores</p>
-          <p class="ff-1-24 text">Mais projetos podem ser encontrados no meu</p> <a class="ff-1-24 text" href="https://github.com/teixeiralc" target="_blank">GitHub</a>
+          <p class="ff-1-24 text">Mais projetos podem ser encontrados no meu <a class="ff-1-24 text" href="https://github.com/teixeiralc" target="_blank">GitHub</a></p>
         </div>
       </div>
     </section>
@@ -265,55 +268,54 @@
         </div>
       </div>
     </section>
+  </main>
 
-    <footer id="contact">
-      <div class="container">
-        <div class="footer_info">
+  <footer id="contact">
+    <div class="container">
+      <div class="footer_info">
 
-          <div class="grid_footer">
+        <div class="grid_footer">
 
-            <div class="footer_text">
-              <p class="ff-1-32 c1_footer">Estou disponível para novas experiências.<br>Entre em contato comigo por e-mail e/ou redes sociais 💬</p>
+          <div class="footer_text">
+            <p class="ff-1-32 c1_footer">Estou disponível para novas experiências.<br>Entre em contato comigo por e-mail e/ou redes sociais 💬</p>
+          </div>
+
+          <div class="footer_contact">
+            <h3 class="ff-1-14-ls-b c1_footer">contato</h3>
+
+            <div class="contact_info">
+              <p class="ff-1-16-ls text_footer">lucascteixeira0@gmail.com</p>
+              <a class="ff-1-16-ls text_footer" href="https://github.com/teixeiralc" target="_blank">GitHub</a>
+              <a class="ff-1-16-ls text_footer" href="https://www.linkedin.com/in/lucascteixeira0/" target="_blank">LinkedIn</a>
             </div>
+          </div>
 
-            <div class="footer_contact">
-              <h3 class="ff-1-14-ls-b c1_footer">contato</h3>
+          <div class="footer_links">
+            <h3 class="ff-1-14-ls-b c1_footer">informações</h3>
 
-              <div class="contact_info">
-                <p class="ff-1-16-ls text_footer">lucascteixeira0@gmail.com</p>
-                <a class="ff-1-16-ls text_footer" href="https://github.com/teixeiralc" target="_blank">GitHub</a>
-                <a class="ff-1-16-ls text_footer" href="https://www.linkedin.com/in/lucascteixeira0/" target="_blank">LinkedIn</a>
-              </div>
+            <div class="footer_info_links ff-1-16-ls text_footer">
+              <a href="#home">Home</a>
+              <a href="#projects">Projetos</a>
+              <a href="#about">Sobre</a>
+              <a href="#education">Formação</a>
+              <a href="#contact">Contato</a>
+              <select class="ff-1-14-ls" name="language" id="language">
+                <option value="pt-BR">PT-BR</option>
+                <option value="en-UK">EN-UK</option>
+              </select>
             </div>
+          </div>
 
-            <div class="footer_links">
-              <h3 class="ff-1-14-ls-b c1_footer">informações</h3>
-
-              <div class="footer_info_links ff-1-16-ls text_footer">
-                <a href="#home">Home</a>
-                <a href="#projects">Projetos</a>
-                <a href="#about">Sobre</a>
-                <a href="#education">Formação</a>
-                <a href="#contact">Contato</a>
-                <select class="ff-1-14-ls" name="language" id="language">
-                  <option value="pt-BR">PT-BR</option>
-                  <option value="en-UK">EN-UK</option>
-                </select>
-              </div>
-            </div>
-
-            <div class="footer_logo">
-              <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M60 0L57.875 15.3896L54.25 15.4532L54.375 3.68842L44.3125 3.05249L39.0625 43.8795L47.0625 44.5791L46.8125 47.25H24.5L24.6875 44.5791L32.25 43.8795L37.4375 3.05249L27.5 3.68842L24 15.3896H20.25L22.75 0H60Z" fill="white" />
-                <path d="M12.3125 0L12.5625 2.79811L18 3.49764L23.125 43.9431L8.5 43.5616L3.75 31.606L0 32.2419L3.0625 47.25H34.5625L34.3125 44.6427L29.875 43.8795L24.875 3.49764L29.0625 2.79811L28.75 0H12.3125Z" fill="white" />
-              </svg>
-            </div>
+          <div class="footer_logo">
+            <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L57.875 15.3896L54.25 15.4532L54.375 3.68842L44.3125 3.05249L39.0625 43.8795L47.0625 44.5791L46.8125 47.25H24.5L24.6875 44.5791L32.25 43.8795L37.4375 3.05249L27.5 3.68842L24 15.3896H20.25L22.75 0H60Z" fill="white" />
+              <path d="M12.3125 0L12.5625 2.79811L18 3.49764L23.125 43.9431L8.5 43.5616L3.75 31.606L0 32.2419L3.0625 47.25H34.5625L34.3125 44.6427L29.875 43.8795L24.875 3.49764L29.0625 2.79811L28.75 0H12.3125Z" fill="white" />
+            </svg>
           </div>
         </div>
       </div>
-    </footer>
-
-  </main>
+    </div>
+  </footer>
 
   <script type="module" src="./js/script.js"></script>
   <script src="https://kit.fontawesome.com/325c8ddbbe.js" crossorigin="anonymous"></script>

@@ -14,6 +14,12 @@ export default function mobileMenu() {
       navList.classList.remove('active');
       hamburger.classList.remove('active');
     });
+
+    const active = navList.classList.contains('active');
+    e.currentTarget.setAttribute('aria-expanded', active);
+
+    if (active) e.currentTarget.setAttribute('aria-label', 'Fechar Menu');
+    else hamburgerBtn.setAttribute('aria-label', 'Abrir Menu');
   };
 
   userEvents.forEach((userEvent) => {

@@ -2,7 +2,8 @@
   padding-top: clamp(40px, 80px, 100px);
 }
 
-.main_info .text, .main_info .title {
+.main_info .text,
+.main_info .title {
   line-height: 1;
 }
 
@@ -49,4 +50,48 @@
 
 .call_to_project:hover svg {
   transform: translate3d(5px, 0, 0);
+}
+
+/* Type Effect */
+
+.home .cursor {
+  display: inline-block;
+  vertical-align: middle;
+  width: 2px;
+  height: 15px;
+  background-color: var(--text);
+  animation: blink 0.5s step-end infinite;
+}
+
+@keyframes blink {
+  from,
+  to {
+    background-color: transparent;
+  }
+  50% {
+    background-color: var(--text);
+  }
+}
+
+.techs {
+  height: 20px;
+}
+
+@media screen and (max-width: 540px) {
+  .home .grid {
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  .main_img {
+    width: 300px;
+    grid-row: 2;
+    justify-self: center;
+  }
+
+  .call_to_project {
+    grid-row: 3;
+  }
 }

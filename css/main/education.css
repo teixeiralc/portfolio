@@ -79,3 +79,13 @@
   transform: translate(-50%);
   position: absolute;
 }
+
+@media screen and (max-width: 768px) {
+  .education_grid {
+    grid-template-columns: fit-content(100%);
+    justify-content: center;
+  }
+  .education_grid .grid_div:not(:first-child)::before {
+    display: none;
+  }
+}
