@@ -9,7 +9,7 @@ html {
 }
 
 body {
-  transition: background 500ms ease-in-out, color 1000ms ease-in-out;
+  transition: background 750ms ease-in-out, color 1250ms ease-in-out;
   background-color: var(--bg_main);
 }
 

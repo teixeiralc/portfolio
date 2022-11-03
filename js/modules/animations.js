@@ -1,20 +1,21 @@
-// import anime from './anime.min.js';
+export default function animations() {
+  const title = new SplitType('.main_info .title');
+  const hello = new SplitType('.main_info #hello');
+  const subtitle = new SplitType('.main_info #subtitle');
 
-// export default function animations() {
-//   const textWrapper = document.querySelector('.main_info h1');
-//   const emphasisTitle = document.querySelector('.main_info .emphasis');
-//   textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, '<span class="letter">$&</span>');
-//   emphasisTitle.innerHTML = emphasisTitle.textContent.replace(
-//     /\S/g,
-//     '<span class="letter emphasis ff-2-title">$&</span>'
-//   );
+  const projects = document.querySelector('.call_to_project');
 
-//   gsap.timeline().add({
-//     targets: '.main_info .letters',
-//     translateY: [200, 0],
-//     easing: 'easeOutExpo',
-//     opacity: 1,
-//     duration: 1500,
-//     delay: (el, i) => 400 + 70 * i,
-//   });
-// }
+  gsap.to('.char', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.3,
+    duration: 0.1,
+  });
+
+  gsap.to('.word', {
+    y: 0,
+    stagger: 0.05,
+    delay: 0.3,
+    duration: 0.1,
+  });
+}

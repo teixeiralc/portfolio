@@ -4,6 +4,7 @@
 
 .main_info .text,
 .main_info .title {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   line-height: 1;
 }
 

@@ -8,18 +8,40 @@ header {
   0% {
     opacity: 0;
   }
-  /* 60% {
-    opacity: 0;
-  }	 */
   100% {
     opacity: 1;
   }
 }
 
 /* Home */
-/* Adicionar delay a cada palavra */
 
-.home .letter {
-  display: inline-block;
+.char {
+  transform: translateY(80px);
+  transition: transform .5s;
+}
+
+.word {
+  transform: translateY(80px);
+  transition: transform .5s;
+}
+
+.main_info .techs {
   opacity: 0;
+  animation: fadeInUpwards 1s forwards ease-out 2.5s;
+}
+
+.call_to_project {
+  opacity: 0;
+  animation: fadeInUpwards 1s forwards ease-out 2.5s;
+}
+
+@keyframes fadeInUpwards {
+  from  {
+    opacity: 0;
+    transform: translate3d(0, 80px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 }

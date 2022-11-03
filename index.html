@@ -9,7 +9,7 @@
 
   <!-- Links -->
   <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/style.css" as="style">
   <link rel="icon" type="image/svf+xml" href="/favicon/favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -61,9 +61,9 @@
       <div class="container separator">
         <div class="grid">
           <div class="main_info">
-            <p class="ff-1-32 text">Olá 👋</p>
-            <h1 style="display: inline-block;" class="ff-1-title title">Eu sou o </h1><span class="emphasis ff-2-title"> Lucas</span>
-            <p class="ff-1-32 text">Desenvolvedor Frontend.</p>
+            <p class="ff-1-32 text" id="hello">Olá 👋</p>
+            <h1 class="ff-1-title title">Eu sou o <span class="emphasis ff-2-title"> Lucas</span></h1>
+            <p class="ff-1-32 text" id="subtitle">Desenvolvedor Frontend.</p>
             <div class="ff-1-20 text techs">
               <div class="type_effect_text"></div>
               <div class="cursor"></div>
@@ -178,7 +178,7 @@
           </div>
 
           <div class="techs_info">
-            <h3 class="ff-1-14-ls-b c4">tecnologias que utilizo</h3>
+            <h3 class="ff-1-14-ls-b c4">tecnologias que gosto</h3>
             <div class="techs_icon">
               <svg class="html_icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.73023 27.0012L0 0H30L27.2668 26.9971L14.9817 30L2.73023 27.0012Z" fill="#4A4A4A" />
@@ -317,8 +317,12 @@
     </div>
   </footer>
 
-  <script type="module" src="./js/script.js"></script>
   <script src="https://kit.fontawesome.com/325c8ddbbe.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/split-type"></script>
+
+  <script type="module" src="./js/script.js"></script>
 </body>
 
 </html>
