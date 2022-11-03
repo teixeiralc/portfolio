@@ -1,0 +1,25 @@
+/* Header animation */
+
+header {
+  animation: fadeInOpacity 1.5s ease-in;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  /* 60% {
+    opacity: 0;
+  }	 */
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Home */
+/* Adicionar delay a cada palavra */
+
+.home .letter {
+  display: inline-block;
+  opacity: 0;
+}

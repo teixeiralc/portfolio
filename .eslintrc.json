@@ -11,12 +11,6 @@
   },
   "rules": {
     "import/extensions": "off",
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
-        }
-      }
-    }
+    "no-plusplus": 0
   }
 }
