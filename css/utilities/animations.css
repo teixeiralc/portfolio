@@ -121,6 +121,14 @@ header {
   animation: overlay 1.5s;
 }
 
+.projects .project:nth-child(2) .overlay {
+  animation-delay: .4s;
+}
+
+.projects .project:nth-child(3) .overlay {
+  animation-delay: .8s;
+}
+
 @keyframes overlay {
   0% {
     transform: scaleX(0);
@@ -143,6 +151,16 @@ header {
 .animate .project_img img {
   animation: imageReveal 1.5s ease-in-out;
   animation-fill-mode: forwards;
+}
+
+.projects .project:nth-child(2) img {
+  opacity: 0;
+  animation-delay: .4s;
+}
+
+.projects .project:nth-child(3) img {
+  opacity: 0;
+  animation-delay: .8s;
 }
 
 @keyframes imageReveal {
