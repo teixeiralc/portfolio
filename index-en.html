@@ -8,9 +8,8 @@
   <meta name="description" content="Lucas Teixeira - Desenvolvedor Frontend. Portfólio e currículo online ">
 
   <!-- Links -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" as="style">
-  <link rel="icon" type="image/svf+xml" href="/favicon/favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/svf+xml" href="./favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,7 +30,7 @@
           </svg></a>
 
         <nav aria-label="primary">
-          <button data-menu="hamburger" aria-expanded="false" aria-controls="menu" aria-label="abrir menu">
+          <button data-menu="hamburger" data-menu="hamburger" aria-expanded="false" aria-controls="menu" aria-label="abrir menu">
             <div class="hamburger"></div>
           </button>
           <ul class="ff-1-18-ls title nav_list" id="menu" role="menu">
@@ -61,16 +60,16 @@
       <div class="container separator">
         <div class="grid">
           <div class="main_info">
-            <p class="ff-1-32 text">Hello 👋</p>
-            <h1 class="ff-1-title title">I'm<span class="emphasis ff-2-title"> Lucas</span></h1>
-            <p class="ff-1-32 text">Frontend Developer</p>
+            <p class="ff-1-32 text" id="hello">Hello 👋</p>
+            <h1 class="ff-1-title title">I am<span class="emphasis ff-2-title"> Lucas</span></h1>
+            <p class="ff-1-32 text" id="subtitle">a Frontend Developer.</p>
             <div class="ff-1-20 text techs">
               <div class="type_effect_text"></div>
               <div class="cursor"></div>
             </div>
           </div>
 
-          <a href="./projects.html" class="call_to_project ff-1-32 text">
+          <a href="#projects" class="call_to_project ff-1-32 text">
             Check my projects
             <svg class="arrowSvg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 7.5H15.5M15.5 7.5L9 1M15.5 7.5L9 14" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -89,7 +88,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-scroll>
       <div class="container separator">
         <div class="section_title">
           <h2 class="ff-2-title title">Projects</h2>
@@ -98,9 +97,10 @@
         <div class="projects">
 
           <div class="project">
-            <a href="#">
+            <a href="https://teixeiralc.github.io/animais-fantasticos/" target="_blank">
               <div class="project_img">
-                <img src="./img/animais-project-main_page.jpg" alt="Screenshot of the home page of Animais Fantásticos's website">
+                <img src="./img/animais-project-main_page.jpg" alt="Screenshot of the home page of Animais Fantásticos">
+                <div class="overlay"></div>
               </div>
 
               <h3 class="ff-1-24-ls c0">Animais Fantásticos</h3>
@@ -114,9 +114,10 @@
           </div>
 
           <div class="project">
-            <a href="#">
+            <a href="https://teixeiralc.github.io/bikcraft/" target="_blank">
               <div class="project_img">
-                <img src="./img/bikcraft-project-main_page.jpg" alt="Screenshot of the home page of Bikcraft's website">
+                <img src="./img/bikcraft-project-main_page.jpg" alt="Screenshot of the home page of Bikcraft">
+                <div class="overlay"></div>
               </div>
 
               <h3 class="ff-1-24-ls c0">Bikcraft</h3>
@@ -130,12 +131,13 @@
           </div>
 
           <div class="project">
-            <a href="#">
+            <a href="https://github.com/teixeiralc/portfolio" target="_blank">
               <div class="project_img">
-                <img src="./img/portfolio-project-main_page.jpg" alt="Screenshot of the home page of my portfolio">
+                <img src="./img/portfolio-project-main_page.jpg" alt="Screenshot of my portfolio">
+                <div class="overlay"></div>
               </div>
 
-              <h3 class="ff-1-24-ls c0">Portfolio</h3>
+              <h3 class="ff-1-24-ls c0">Portfólio</h3>
 
               <div class="techs_used">
                 <span class="btn_like ff-1-14-ls c0">HTML</span>
@@ -148,13 +150,13 @@
         </div>
 
         <div class="projects_info">
-          <p class="ff-1-24 text">This are some of my largest projects</p>
-          <p class="ff-1-24 text">You can find more at my</p> <a class="ff-1-24 text" href="https://github.com/teixeiralc" target="_blank">GitHub</a>
+          <p class="ff-1-24 text">This are some of my larger projects</p>
+          <p class="ff-1-24 text">You can find more of them on my <a class="ff-1-24 text" href="https://github.com/teixeiralc" target="_blank">GitHub</a></p>
         </div>
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" data-scroll>
       <div class="container separator">
         <div class="section_title">
           <h2 class="ff-2-title title">About me</h2>
@@ -171,14 +173,14 @@
           <span class="about_details">&lt;/&gt;</span>
 
           <div class="about_info ff-1-20 text">
-            <p>My name is Lucas Teixeira, I'm 17 years old and I'm currently located in Brazil.</p>
+            <p>My name is Lucas Teixeira, I'm 17 years old and am currently located in Brazil.</p>
             <p>I've always been passionate about technology and have always been curious to understand how the apps and websites I use daily are made.</p>
             <p>I currently study Systems Analysis and Development and Frontend technologies.</p>
             <p>Presently I'm focused on learning to be ready to join the programming world as a Frontend Developer.</p>
           </div>
 
           <div class="techs_info">
-            <h3 class="ff-1-14-ls-b c4">tech I enjoy</h3>
+            <h3 class="ff-1-14-ls-b c4">techs i like</h3>
             <div class="techs_icon">
               <svg class="html_icon" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.73023 27.0012L0 0H30L27.2668 26.9971L14.9817 30L2.73023 27.0012Z" fill="#4A4A4A" />
@@ -216,7 +218,7 @@
       </div>
     </section>
 
-    <section class="education" id="education">
+    <section class="education" id="education" data-scroll>
       <div class="container">
         <div class="section_title">
           <h2 class="ff-2-title title">Education</h2>
@@ -228,7 +230,7 @@
             <h3 class="ff-1-20-ls-b text">College</h3>
             <div class="college_info">
               <span class="ff-1-14 c4">Unicesumar</span>
-              <h4 class="ff-1-24 white">System Analysis and Development</h4>
+              <h4 class="ff-1-24 white">Systems Analysis and Development</h4>
               <span class="ff-1-14 c4">2022-2025</span>
             </div>
           </div>
@@ -249,16 +251,16 @@
                 <a href="https://www.origamid.com/certificate/19c07896" target="_blank">CSS Flex</a><span class="c4">6h</span>
               </div>
               <div class="course">
-                <a href="https://www.origamid.com/certificate/a638d11b" target="_blank">UI Design Avançado</a><span class="c4">30h</span>
+                <a href="https://www.origamid.com/certificate/a638d11b" target="_blank">UI Design Advanced</a><span class="c4">30h</span>
               </div>
               <div class="course">
-                <a href="https://www.origamid.com/certificate/af46cb03" target="_blank">UI Design Iniciante</a><span class="c4">34h</span>
+                <a href="https://www.origamid.com/certificate/af46cb03" target="_blank">UI Design Beginner</a><span class="c4">34h</span>
               </div>
             </div>
           </div>
 
           <div class="languages grid_div"">
-            <h3 class=" ff-1-20-ls-b text">languages</h3>
+            <h3 class=" ff-1-20-ls-b text">Languages</h3>
             <div class="languages_info ff-1-16 c0">
               <p>Portuguese <span class="c4">/ Native</span></p>
               <p>English <span class="c4">/ Intermediary</span></p>
@@ -277,7 +279,7 @@
         <div class="grid_footer">
 
           <div class="footer_text">
-            <p class="ff-1-32 c1_footer">I'm available for new experiences<br>Get in touch with me through e-mail or social media 💬</p>
+            <p class="ff-1-32 c1_footer">I'm available for new experiences.<br>Get in touch with me through e-mail or social medias 💬</p>
           </div>
 
           <div class="footer_contact">
@@ -291,7 +293,7 @@
           </div>
 
           <div class="footer_links">
-            <h3 class="ff-1-14-ls-b c1_footer">information</h3>
+            <h3 class="ff-1-14-ls-b c1_footer">informações</h3>
 
             <div class="footer_info_links ff-1-16-ls text_footer">
               <a href="#home">Home</a>
@@ -318,6 +320,10 @@
   </footer>
 
   <script src="https://kit.fontawesome.com/325c8ddbbe.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/split-type"></script>
+
   <script type="module" src="./js/script.js"></script>
 </body>
 

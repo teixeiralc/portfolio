@@ -8,9 +8,8 @@
   <meta name="description" content="Lucas Teixeira - Desenvolvedor Frontend. Portfólio e currículo online ">
 
   <!-- Links -->
-  <link rel="preload" href="./css/style.css" as="style">
-  <link rel="stylesheet" href="./css/style.css" as="style">
-  <link rel="icon" type="image/svf+xml" href="/favicon/favicon.svg">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="icon" type="image/svf+xml" href="./favicon.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -70,7 +69,7 @@
             </div>
           </div>
 
-          <a href="./projects.html" class="call_to_project ff-1-32 text">
+          <a href="#projects" class="call_to_project ff-1-32 text">
             Veja os meus projetos
             <svg class="arrowSvg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M1 7.5H15.5M15.5 7.5L9 1M15.5 7.5L9 14" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
@@ -89,7 +88,7 @@
       </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" data-scroll>
       <div class="container separator">
         <div class="section_title">
           <h2 class="ff-2-title title">Projetos</h2>
@@ -98,9 +97,10 @@
         <div class="projects">
 
           <div class="project">
-            <a href="#">
+            <a href="https://teixeiralc.github.io/animais-fantasticos/" target="_blank">
               <div class="project_img">
                 <img src="./img/animais-project-main_page.jpg" alt="Foto da home page do site Animais Fantásticos">
+                <div class="overlay"></div>
               </div>
 
               <h3 class="ff-1-24-ls c0">Animais Fantásticos</h3>
@@ -114,9 +114,10 @@
           </div>
 
           <div class="project">
-            <a href="#">
+            <a href="https://teixeiralc.github.io/bikcraft/" target="_blank">
               <div class="project_img">
                 <img src="./img/bikcraft-project-main_page.jpg" alt="Foto da home page do site Bikcraft">
+                <div class="overlay"></div>
               </div>
 
               <h3 class="ff-1-24-ls c0">Bikcraft</h3>
@@ -130,9 +131,10 @@
           </div>
 
           <div class="project">
-            <a href="#">
+            <a href="https://github.com/teixeiralc/portfolio" target="_blank">
               <div class="project_img">
                 <img src="./img/portfolio-project-main_page.jpg" alt="Foto da home page do meu portfólio">
+                <div class="overlay"></div>
               </div>
 
               <h3 class="ff-1-24-ls c0">Portfólio</h3>
@@ -154,7 +156,7 @@
       </div>
     </section>
 
-    <section class="about" id="about">
+    <section class="about" id="about" data-scroll>
       <div class="container separator">
         <div class="section_title">
           <h2 class="ff-2-title title">Sobre mim</h2>
@@ -216,7 +218,7 @@
       </div>
     </section>
 
-    <section class="education" id="education">
+    <section class="education" id="education" data-scroll>
       <div class="container">
         <div class="section_title">
           <h2 class="ff-2-title title">Formação</h2>
@@ -277,7 +279,7 @@
         <div class="grid_footer">
 
           <div class="footer_text">
-            <p class="ff-1-32 c1_footer">Estou disponível para novas experiências.<br>Entre em contato comigo por e-mail e/ou redes sociais 💬</p>
+            <p class="ff-1-32 c1_footer">Estou disponível para novas experiências.<br>Entre em contato comigo por e-mail ou redes sociais 💬</p>
           </div>
 
           <div class="footer_contact">
@@ -300,7 +302,7 @@
               <a href="#education">Formação</a>
               <a href="#contact">Contato</a>
               <select class="ff-1-14-ls" name="language" data-language>
-                <option value="ptBR">PT-BR</option>
+                <option value="ptBR" selected>PT-BR</option>
                 <option value="enUK">EN-UK</option>
               </select>
             </div>
