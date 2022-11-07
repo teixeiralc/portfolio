@@ -1,7 +1,8 @@
 /* Header animation */
 
 header {
-  animation: fadeInOpacity 1.5s ease-in;
+  opacity: 0;
+  animation: fadeInOpacity 1s ease-in forwards 2.5s;
 }
 
 @keyframes fadeInOpacity {
