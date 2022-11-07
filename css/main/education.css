@@ -84,6 +84,7 @@
   .education_grid {
     grid-template-columns: fit-content(100%);
     justify-content: center;
+    gap: 40px;
   }
   .education_grid .grid_div:not(:first-child)::before {
     display: none;

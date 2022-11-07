@@ -86,3 +86,9 @@
   top: 0;
   left: 0;
 }
+
+@media screen and (max-width: 500px) {
+  .projects .project:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

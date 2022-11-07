@@ -23,6 +23,9 @@
 
 .about .techs_info {
   grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 .about .techs_info h3 {
@@ -50,7 +53,7 @@
   font-family: monospace;
 }
 
-.about_info p:last-child::before {
+.about_info p:last-child::after {
   content: '</p>';
   font-family: monospace;
   position: absolute;
@@ -76,5 +79,11 @@
   }
   .about_logo {
     width: 300px;
+  }
+  .about_info p:first-child:before {
+    left: 2.5%;
+  }
+  .about .techs_info {
+    align-items: center;
   }
 }

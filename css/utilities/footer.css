@@ -62,4 +62,7 @@ footer {
   .grid_footer {
     grid-template-columns: 1fr;
   }
+  footer {
+    margin-top: 80px;
+  }
 }

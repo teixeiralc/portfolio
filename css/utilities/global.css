@@ -90,3 +90,12 @@ svg {
   border: 1px solid currentColor;
   border-radius: 10px;
 }
+
+@media screen and (max-width: 500px) {
+  .section_title::before {
+    background-image: none;
+  }
+  .light .section_title::before {
+    background-image: none;
+  }
+}
