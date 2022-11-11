@@ -51,19 +51,6 @@ header {
   }
 }
 
-.home .main_img svg {
-  animation: spin 15s linear infinite;
-}
-
-@keyframes spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
 /* Anime on scroll */
 
 [data-scroll] {
@@ -135,11 +122,11 @@ header {
 }
 
 .projects .project:nth-child(2) .overlay {
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .projects .project:nth-child(3) .overlay {
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 @keyframes overlay {
@@ -168,12 +155,12 @@ header {
 
 .projects .project:nth-child(2) img {
   opacity: 0;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
 }
 
 .projects .project:nth-child(3) img {
   opacity: 0;
-  animation-delay: .8s;
+  animation-delay: 0.8s;
 }
 
 @keyframes imageReveal {
