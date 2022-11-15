@@ -1,8 +1,8 @@
 export default function languageSwitch() {
   const languageSelect = document.querySelector('[data-language]');
   const URLs = {
-    ptBR: 'https://teixeiralc.github.io/portfolio/',
-    enUK: 'https://teixeiralc.github.io/portfolio/en',
+    ptBR: '/',
+    enUK: `/en`,
   };
 
   const redirect = () => {
