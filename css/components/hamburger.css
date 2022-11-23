@@ -39,11 +39,11 @@
 }
 
 .active.hamburger:before {
-  transform: translateY(0) rotate(135deg);
+  transform: translateY(0) rotate(45deg);
 }
 
 .active.hamburger:after {
-  transform: translateY(0) rotate(-135deg);
+  transform: translateY(0) rotate(-45deg);
 }
 
 @media (max-width: 768px) {
