@@ -1,6 +1,6 @@
 export default function typeEffect() {
   // List of sentences
-  const content = ['JavaScript', 'CSS', 'Figma', 'UI Design'];
+  const content = ['JavaScript', 'React', 'CSS', 'Figma', 'UI Design'];
 
   // Current sentence being processed
   let part = 0;
