@@ -99,3 +99,9 @@ svg {
     background-image: none;
   }
 }
+
+/* Logo on hover */
+
+.logo:hover path {
+  fill: var(--emphasis);
+}
