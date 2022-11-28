@@ -102,6 +102,6 @@ svg {
 
 /* Logo on hover */
 
-.logo:hover path {
+.header_logo:hover path {
   fill: var(--emphasis);
 }
