@@ -1,6 +1,6 @@
 /* Header animation */
 
-header {
+.anime_header {
   animation: fadeInOpacity 3.5s ease-in;
 }
 

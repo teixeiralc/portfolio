@@ -5,6 +5,13 @@ export default function languageSwitch() {
     enUK: `/portfolio/en`,
   };
 
+  if (window.location.pathname === '/projetos.html') {
+    // URLs.ptBR = '/portfolio/projetos'
+    // URLs.enUK = '/portfolio/projetos-en'
+    URLs.ptBR = '/projetos.html'
+    URLs.enUK = '/projetos-en.html'
+  }
+
   const redirect = () => {
     // On change, will redirect the user to the desired language page
     const selectedValue = languageSelect.value;

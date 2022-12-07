@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lucas Teixeira - Desenvolvedor Frontend. Portfólio e currículo online ">
+
+  <!-- Links -->
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="icon" type="image/svf+xml" href="./favicon.svg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <title>Projetos - Lucas Teixeira</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="container">
+      <div class="navbar" id="navbar">
+        <a href="../">
+          <svg class="logo header_logo" width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M60 0L57.875 15.3896L54.25 15.4532L54.375 3.68842L44.3125 3.05249L39.0625 43.8795L47.0625 44.5791L46.8125 47.25H24.5L24.6875 44.5791L32.25 43.8795L37.4375 3.05249L27.5 3.68842L24 15.3896H20.25L22.75 0H60Z" fill="white" />
+            <path d="M12.3125 0L12.5625 2.79811L18 3.49764L23.125 43.9431L8.5 43.5616L3.75 31.606L0 32.2419L3.0625 47.25H34.5625L34.3125 44.6427L29.875 43.8795L24.875 3.49764L29.0625 2.79811L28.75 0H12.3125Z" fill="white" />
+          </svg></a>
+
+        <nav aria-label="primária">
+          <button data-menu="hamburger" data-menu="hamburger" aria-expanded="false" aria-controls="menu" aria-label="abrir menu">
+            <div class="hamburger"></div>
+          </button>
+          <ul class="ff-1-18-ls title nav_list" id="menu" role="menu">
+            <li><a href="../">Home</a></li>
+            <li><a href="#projects" class="active_nav_link">Projetos</a></li>
+            <li><a href="#about">Sobre</a></li>
+            <li><a href="#education">Formação</a></li>
+            <li><a href="#contact">Contato</a></li>
+            <li class="theme_switch">
+              <input type="checkbox" id="theme_checkbox">
+              <label for="theme_checkbox">
+                <i class="fas fa-sun"></i>
+                <i class="fas fa-moon"></i>
+                <div class="ball"></div>
+              </label>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="projetos container">
+      <div class="section_title">
+        <h1 class="ff-2-title title">Projetos</h1>
+      </div>
+
+      <div class="wrapper_projetos">
+        <div class="projetos_info">
+          <h2 class="ff-2-32-b-i title">Dogs</h2>
+          <p class="ff-1-18 text">Dogs é uma rede social para cachorros desenvolvida em React.<br> O usuário pode criar conta, postar fotos, analisar estatísticas, postar comentários, etc.</p>
+          <p class="ff-1-18 text">Desenvolvido como projeto final do curso de React.<br> Consumindo uma API externa, foi possível replicar o ambiente de uma rede social funcional.</p>
+          <p class="ff-1-18 text">Foi utilizado React, CSS Modules e Vite para o desenvolvimento.</p>
+          <a href="https://github.com/teixeiralc/dogs" class="ff-1-18 text" target="_blank">
+            Visite o repositório
+            <svg class="arrowSvg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7.5H15.5M15.5 7.5L9 1M15.5 7.5L9 14" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+        <div class="projetos_img">
+          <img src="./img/dogs-projectPage.jpg" alt="Home page do site Dogs">
+        </div>
+      </div>
+
+
+      <div class="wrapper_projetos">
+        <div class="projetos_info">
+          <h2 class="ff-2-32-b-i title">Animais Fantásticos</h2>
+          <p class="ff-1-18 text">Animais Fantásticos é um site para uma marca fictícia que publica curiosidades e dados sobre animais fantásticos.</p>
+          <p class="ff-1-18 text">Desenvolvido como projeto final do curso de JavaScript. Possui animações, slide, tooltip, modal, dados via API, entre outras features.</p>
+          <a href="https://teixeiralc.github.io/animais-fantasticos/" class="ff-1-18 text" target="_blank">
+            Visite o site
+            <svg class="arrowSvg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7.5H15.5M15.5 7.5L9 1M15.5 7.5L9 14" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="projetos_img">
+          <img src="./img/animais-projectPage.jpg" alt="Home page do site Animais Fantásticos">
+        </div>
+
+      </div>
+
+      <div class="wrapper_projetos">
+        <div class="projetos_info">
+          <h2 class="ff-2-32-b-i title">Bikcraft</h2>
+          <p class="ff-1-18 text">Um site para uma marca de bicicletas elétricas fictícia, onde o usuário pode conhecer os produtos, entrar em contato e requisitar um orçamento.</p>
+          <p class="ff-1-18 text">Desenvolvido como projeto final do curso de HTML e CSS.</p>
+          <a href="https://teixeiralc.github.io/bikcraft/" class="ff-1-18 text" target="_blank">
+            Visite o site
+            <svg class="arrowSvg" width="17" height="15" viewBox="0 0 17 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 7.5H15.5M15.5 7.5L9 1M15.5 7.5L9 14" stroke="#CCCCCC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </a>
+        </div>
+
+        <div class="projetos_img">
+          <img src="./img/bikcraft-ProjectPage.jpg" alt="Home page do site Bikcraft">
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <footer id="contact">
+    <div class="container">
+      <div class="footer_info">
+
+        <div class="grid_footer">
+
+          <div class="footer_text">
+            <p class="ff-1-32 c1_footer">Estou disponível para novas experiências.<br>Entre em contato comigo por e-mail ou redes sociais 💬</p>
+          </div>
+
+          <div class="footer_contact">
+            <h3 class="ff-1-14-ls-b c1_footer">contato</h3>
+
+            <div class="contact_info">
+              <p class="ff-1-16-ls text_footer" href="mailto:lucascteixeira0@gmail.com">lucascteixeira0@gmail.com</p>
+              <a class="ff-1-16-ls text_footer" href="https://github.com/teixeiralc" target="_blank">GitHub</a>
+              <a class="ff-1-16-ls text_footer" href="https://www.linkedin.com/in/lucascteixeira0/" target="_blank">LinkedIn</a>
+            </div>
+          </div>
+
+          <div class="footer_links">
+            <h3 class="ff-1-14-ls-b c1_footer">informações</h3>
+
+            <div class="footer_info_links ff-1-16-ls text_footer">
+              <a href="#home">Home</a>
+              <a href="#projects">Projetos</a>
+              <a href="#about">Sobre</a>
+              <a href="#education">Formação</a>
+              <a href="#contact">Contato</a>
+              <select class="ff-1-14-ls" name="language" data-language>
+                <option value="ptBR" selected>PT-BR</option>
+                <option value="enUK">EN-UK</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="footer_logo">
+            <svg width="60" height="48" viewBox="0 0 60 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M60 0L57.875 15.3896L54.25 15.4532L54.375 3.68842L44.3125 3.05249L39.0625 43.8795L47.0625 44.5791L46.8125 47.25H24.5L24.6875 44.5791L32.25 43.8795L37.4375 3.05249L27.5 3.68842L24 15.3896H20.25L22.75 0H60Z" fill="white" />
+              <path d="M12.3125 0L12.5625 2.79811L18 3.49764L23.125 43.9431L8.5 43.5616L3.75 31.606L0 32.2419L3.0625 47.25H34.5625L34.3125 44.6427L29.875 43.8795L24.875 3.49764L29.0625 2.79811L28.75 0H12.3125Z" fill="white" />
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/325c8ddbbe.js" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://unpkg.com/split-type"></script>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>

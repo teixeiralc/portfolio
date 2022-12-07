@@ -16,6 +16,10 @@ ls == letter-spacing
   font: italic 700 clamp(2.5rem, 4.5vw, 6rem) / 1.1 'Merriweather', serif;
 }
 
+.ff-2-32-b-i {
+  font: 400 clamp(1.25rem, 2vw, 2.5rem) / 1.4 'Merriweather', sans-serif;
+}
+
 .ff-1-32 {
   font: 400 clamp(1.25rem, 2vw, 2.5rem) / 1.4 'Space Grotesk', sans-serif;
 }
@@ -27,6 +31,11 @@ ls == letter-spacing
 .ff-1-24-ls {
   font: 400 clamp(1.2rem, 1.5vw, 1.75rem) / 1.4 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
+}
+
+.ff-1-20-b {
+
+  font: 700 clamp(1.125rem, 1.25vw, 1.5rem) / 1.4 'Space Grotesk', sans-serif;
 }
 
 .ff-1-20 {
@@ -46,6 +55,10 @@ ls == letter-spacing
 .ff-1-18-ls {
   font: 400 clamp(1rem, 1.125vw, 1.5rem) / 1 'Space Grotesk', sans-serif;
   letter-spacing: 0.1rem;
+}
+
+.ff-1-18 {
+  font: 400 clamp(1rem, 1.125vw, 1.5rem) / 1.4 'Space Grotesk', sans-serif;
 }
 
 .ff-1-16 {

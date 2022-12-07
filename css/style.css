@@ -17,3 +17,8 @@
 /* Components */
 
 @import './components/hamburger.css';
+
+/* Projetos */
+
+@import './projetos/projetos.css';
+

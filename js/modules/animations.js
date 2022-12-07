@@ -5,17 +5,19 @@ export default function animations() {
 
   const projects = document.querySelector('.call_to_project');
 
-  gsap.to('.char', {
-    y: 0,
-    stagger: 0.05,
-    delay: 0.3,
-    duration: 0.1,
-  });
+  if (title && hello && subtitle && projects) {
+    gsap.to('.char', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.3,
+      duration: 0.1,
+    });
 
-  gsap.to('.word', {
-    y: 0,
-    stagger: 0.05,
-    delay: 0.3,
-    duration: 0.1,
-  });
+    gsap.to('.word', {
+      y: 0,
+      stagger: 0.05,
+      delay: 0.3,
+      duration: 0.1,
+    });
+  }
 }

@@ -18,49 +18,54 @@ export default function typeEffect() {
   const cursor = document.querySelector('.cursor');
 
   // Implements typing effect
-  function Type() {
-    // Get substring with 1 characater added
-    const text = content[part].substring(0, partIndex + 1);
-    element.innerHTML = text;
-    partIndex++;
+  if (element) {
 
-    // Implements deleting effect
-    function Delete() {
-      // Get substring with 1 characater deleted
-      const text = content[part].substring(0, partIndex - 1);
+    // eslint-disable-next-line no-inner-declarations
+    function Type() {
+      // Get substring with 1 characater added
+      const text = content[part].substring(0, partIndex + 1);
       element.innerHTML = text;
-      partIndex--;
-
-      // If sentence has been deleted then start to display the next sentence
-      if (text === '') {
+      partIndex++;
+  
+      // Implements deleting effect
+      function Delete() {
+        // Get substring with 1 characater deleted
+        // eslint-disable-next-line no-shadow
+        const text = content[part].substring(0, partIndex - 1);
+        element.innerHTML = text;
+        partIndex--;
+  
+        // If sentence has been deleted then start to display the next sentence
+        if (text === '') {
+          clearInterval(intertvalVal);
+  
+          // If current sentence was last then display the first one, else move to the next
+          if (part === content.length - 1) part = 0;
+          else part++;
+  
+          partIndex = 0;
+  
+          // Start to display the next sentence after some time
+          setTimeout(() => {
+            cursor.style.display = 'inline-block';
+            intertvalVal = setInterval(Type, 100);
+          }, 200);
+        }
+      }
+  
+      // If full sentence has been displayed then start to delete the sentence after some time
+      if (text === content[part]) {
+        // Hide the cursor
+        cursor.style.display = 'none';
+  
         clearInterval(intertvalVal);
-
-        // If current sentence was last then display the first one, else move to the next
-        if (part === content.length - 1) part = 0;
-        else part++;
-
-        partIndex = 0;
-
-        // Start to display the next sentence after some time
         setTimeout(() => {
-          cursor.style.display = 'inline-block';
-          intertvalVal = setInterval(Type, 100);
-        }, 200);
+          intertvalVal = setInterval(Delete, 100);
+        }, 1000);
       }
     }
-
-    // If full sentence has been displayed then start to delete the sentence after some time
-    if (text === content[part]) {
-      // Hide the cursor
-      cursor.style.display = 'none';
-
-      clearInterval(intertvalVal);
-      setTimeout(() => {
-        intertvalVal = setInterval(Delete, 100);
-      }, 1000);
-    }
+  
+    // Start the typing effect on load
+    intertvalVal = setInterval(Type, 100);
   }
-
-  // Start the typing effect on load
-  intertvalVal = setInterval(Type, 100);
 }
