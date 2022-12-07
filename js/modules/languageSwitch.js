@@ -6,8 +6,8 @@ export default function languageSwitch() {
   };
 
   if (window.location.pathname === '/projetos.html') {
-    URLs.ptBR = '/portfolio/projetos'
-    URLs.enUK = '/portfolio/projetos-en'
+    URLs.ptBR = '/portfolio/projetos.html';
+    URLs.enUK = '/portfolio/projetos-en.html';
   }
 
   const redirect = () => {
