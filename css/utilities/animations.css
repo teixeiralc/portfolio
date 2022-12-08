@@ -182,7 +182,7 @@
 
 .animate .projects_info {
   opacity: 0;
-  animation: fadeInUp 0.5s forwards ease-out 1s;
+  animation: fadeInUp 0.5s forwards ease-out 1.25s;
 }
 
 /* About Section */
@@ -211,3 +211,7 @@
   opacity: 0;
   animation: fadeInUp 1s forwards ease-out;
 }
+
+/* Projects Page */
+
+

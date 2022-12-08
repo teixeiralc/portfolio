@@ -80,7 +80,7 @@
     grid-column: initial;
     grid-row: initial;
   }
-  
+
   .wrapper_projetos:nth-child(odd) .projetos_info {
     grid-column: initial;
   }
