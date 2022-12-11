@@ -1,5 +1,5 @@
 .projects {
-  margin-top: clamp(40px, 80px, 100px);
+  margin-top: clamp(40px, 10vh, 100px);
   display: flex;
   justify-content: space-between;
   gap: 20px;
@@ -46,7 +46,7 @@
 }
 
 .projects_info {
-  margin-top: clamp(50px, 100px, 120px);
+  margin-top: clamp(50px, 10vh, 120px);
 }
 
 .projects_info p {

@@ -46,6 +46,14 @@
 
 /* Theme changer */
 
+.theme_switch {
+  display: none;
+}
+
+.js .theme_switch {
+  display: initial;
+}
+
 .nav_list input[type='checkbox'] {
   position: absolute;
   opacity: 0;
@@ -96,4 +104,25 @@
 
 .nav_list input:checked + label .ball {
   transform: translate3d(24px, 0, 0);
+}
+
+@media screen and (max-width: 500px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  .nav_list {
+    flex-wrap: wrap;
+  }
+  .header_logo {
+    padding-bottom: 1rem;
+  }
+  .js .header_logo {
+    padding-bottom: 0;
+  }
+  .js .navbar {
+    flex-wrap: initial;
+  }
+  .js .nav_list {
+    flex-wrap: initial;
+  }
 }

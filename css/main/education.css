@@ -1,5 +1,5 @@
 .education_grid {
-  margin-top: clamp(40px, 80px, 100px);
+  margin-top: clamp(40px, 10vh, 100px);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 80px;

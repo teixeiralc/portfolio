@@ -1,5 +1,5 @@
 .about .grid {
-  margin-top: clamp(40px, 80px, 100px);
+  margin-top: clamp(40px, 10vh, 100px);
   align-items: center;
   gap: clamp(20px, 40px, 50px);
 }

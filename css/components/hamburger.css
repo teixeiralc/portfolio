@@ -47,14 +47,14 @@
 }
 
 @media (max-width: 768px) {
-  [data-menu='hamburger'] {
+  .js [data-menu='hamburger'] {
     display: block;
     z-index: 2;
   }
-  .theme_switch {
+  .js .theme_switch {
     margin-left: 5px;
   }
-  .nav_list {
+  .js .nav_list {
     flex-direction: column;
     align-items: flex-start;
     position: absolute;
@@ -68,15 +68,15 @@
     gap: 0;
     z-index: 10000;
   }
-  .nav_list li {
+  .js .nav_list li {
     width: 100%;
     padding: 20px 0;
     border-bottom: 2px solid var(--separator);
   }
-  .nav_list li a {
+  .js .nav_list li a {
     text-transform: uppercase;
   }
-  .nav_list.active {
+  .js .nav_list.active {
     height: 360px;
   }
 }

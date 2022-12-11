@@ -43,7 +43,15 @@ footer {
 
 /* Language selector */
 
-.footer_info_links select {
+[data-language] {
+  display: none;
+}
+
+.js [data-language] {
+  display: initial;
+}
+
+[data-language] {
   max-width: max-content;
   border: none;
   background-color: #171717;

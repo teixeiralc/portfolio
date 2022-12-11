@@ -1,6 +1,6 @@
 /* Header animation */
 
-.anime_header {
+.js .anime_header {
   animation: fadeInOpacity 3.5s ease-in;
 }
 
@@ -28,14 +28,14 @@
   transition: transform 0.5s;
 }
 
-.main_info .techs {
+.js .main_info .techs {
   opacity: 0;
   animation: fadeInUpwards 1s forwards ease-out 2.5s;
 }
 
-.call_to_project,
-.main_info .techs,
-.main_img {
+.js .call_to_project,
+.js .main_info .techs,
+.js .main_img {
   opacity: 0;
   animation: fadeInUpwards 1s forwards ease-out 2.5s;
 }
@@ -53,11 +53,11 @@
 
 /* Anime on scroll */
 
-[data-scroll] {
+.js [data-scroll] {
   opacity: 0;
 }
 
-.animate {
+.js .animate {
   opacity: 1;
   transform: none;
   transition: transform 0.8s, opacity 0.8s;
@@ -117,7 +117,7 @@
 
 /* Image reveal */
 
-.animate .project_img .overlay {
+.js .animate .project_img .overlay {
   animation: overlay 1.5s;
 }
 
@@ -153,12 +153,12 @@
   animation-fill-mode: forwards;
 }
 
-.projects .project:nth-child(2) img {
+.js .projects .project:nth-child(2) img {
   opacity: 0;
   animation-delay: 0.4s;
 }
 
-.projects .project:nth-child(3) img {
+.js .projects .project:nth-child(3) img {
   opacity: 0;
   animation-delay: 0.8s;
 }
@@ -213,5 +213,3 @@
 }
 
 /* Projects Page */
-
-
