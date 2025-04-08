@@ -1,8 +1,8 @@
 export default function languageSwitch() {
   const languageSelect = document.querySelector('[data-language]');
   const URLs = {
-    pt: '/portfolio/',
-    en: `/portfolio/en`,
+    pt: '/',
+    en: `/en`,
   };
 
   const redirect = () => {
