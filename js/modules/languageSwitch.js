@@ -6,7 +6,6 @@ export default function languageSwitch() {
   };
 
   const redirect = () => {
-    // On change, will redirect the user to the desired language page
     const selectedValue = languageSelect.value;
 
     window.location.href = URLs[selectedValue];
