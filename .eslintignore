@@ -1,0 +1,12 @@
+node_modules/
+dist/
+
+# HTML and static assets are not linted by ESLint
+*.html
+css/
+img/
+icon/
+
+# Built bundle
+main.js
+
