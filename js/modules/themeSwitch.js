@@ -1,7 +1,6 @@
 export default function ThemeSwitch() {
   const themeCheckbox = document.getElementById('theme_checkbox');
 
-  // Toggle light theme
   const toggleLightMode = () => {
     document.documentElement.classList.toggle('light');
   };
@@ -14,8 +13,6 @@ export default function ThemeSwitch() {
       localStorage.setItem('light', 1);
     }
   });
-
-  // Load theme storaged in LocalStorage
 
   const loadTheme = () => {
     const lightMode = localStorage.getItem('light');
